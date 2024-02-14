@@ -1,28 +1,5 @@
 const FeaturedImagesWrapper = document.querySelector('.featured-images')
 const LastImageWrapper = document.querySelector('.last-images')
-// const createNode = (im,i) => {
-//     const {tags :tagsList} = im
-//     const isSelected= Math.floor(Math.random() * 2) === 1
-//     const img = document.createElement('img')
-//     const gradient = document.createElement('div')
-//     const node = document.createElement("div")
-//     const title = document.createElement('div')
-//     const tags = document.createElement("div")
-//     const svg = document.createElement("img")
-//     svg.classList.add('svg-box')
-//     gradient.classList.add("gradient-box")
-//     svg.src = isSelected ? '../icons/star-regular.svg' : '../icons/star-solid.svg'
-//     tags.classList.add("tags-box")
-//     tags.innerText = Object.values(tagsList).map(tag => "#"+tag).join(' ')
-//     title.classList.add('title-box')
-//     title.innerText = im.title
-//     img.src = `../${im.image}`
-//     img.classList.add('img-box')
-//     node.append(img,tags,title,svg,gradient)
-//     if(i===0) node.classList.add('box1')
-//     node.classList.add('featured-image')
-//     return node
-// }
 
 const createFeatureNode= (im,i) => {
     const {tags :tagsList} = im
